@@ -1,0 +1,65 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+*.pdb
+*.egg-info/
+.eggs/
+dist/
+build/
+*.egg
+
+# --- Virtual environments ---
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# --- IDE / Editors ---
+.vscode/
+.idea/
+*.iml
+
+# --- OS files ---
+.DS_Store
+Thumbs.db
+
+# --- Logs ---
+*.log
+logs/
+bot.log
+
+# --- Byte-compiled cache ---
+__pycache__/
+*.py[cod]
+
+# --- Alembic migrations cache ---
+alembic/versions/__pycache__/
+alembic.ini~
+
+# --- Environment & config ---
+.env
+.env.*
+!.env.example
+
+# --- Database ---
+*.sqlite3
+*.db
+*.sql
+
+# --- Docker ---
+*.pid
+*.tar
+docker-compose.override.yml
+
+# --- Redis dumps ---
+dump.rdb
+appendonly.aof
+
+# --- Railway / deployment ---
+railway.json
+Procfile

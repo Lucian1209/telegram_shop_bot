@@ -1,0 +1,10 @@
+aiogram
+asyncpg
+SQLAlchemy
+alembic
+redis
+celery
+python-dotenv
+pydantic
+httpx
+loguru
