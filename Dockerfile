@@ -1,5 +1,5 @@
 FROM python:3.11-slim
-WORKDIR /
+WORKDIR /app
 COPY . .
 RUN pip install -r requirements.txt
-CMD ["python", "-m", "main"]
+CMD ["python", "-m", "app.main"]
