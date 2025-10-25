@@ -5,7 +5,7 @@ from aiogram.fsm.storage.redis import RedisStorage
 from aiogram.types import BotCommand
 from app.config import settings
 from app.loader import get_bot
-from app.handlers import start, catalog, cart, payments
+from app.handlers import start, catalog, cart, payments, admin
 
 async def on_startup(bot: Bot):
     await bot.set_my_commands([
@@ -22,6 +22,7 @@ async def main():
     dp.include_router(catalog.router)
     dp.include_router(cart.router)
     dp.include_router(payments.router)
+    dp.include_router(admin.router)
 
     await on_startup(bot)
     try:
